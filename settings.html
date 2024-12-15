@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Account Settings</h1>
+    </header>
+    <main>
+        <form>
+            <label for="password">Change Password:</label>
+            <input type="password" id="password" placeholder="New Password">
+            <button type="button" onclick="updatePassword()">Update</button>
+
+            <label for="address">Edit Address:</label>
+            <input type="text" id="address" placeholder="New Address">
+            <button type="button" onclick="updateAddress()">Update</button>
+
+            <label for="phone">Edit Phone Number:</label>
+            <input type="text" id="phone" placeholder="New Phone Number">
+            <button type="button" onclick="updatePhone()">Update</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 LuckySpin Casino</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

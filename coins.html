@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header wird dynamisch geladen -->
+    <div id="header-container"></div>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <h2>Manage Your Coins</h2>
+        <p>You currently have <span id="coins-display">50</span> coins.</p>
+        <button onclick="watchAd()">Watch Ad (Placeholder)</button>
+        <button onclick="buyCoins()">Buy Coins via PayPal</button>
+        <img src="img/paypal-logo.png" alt="PayPal Logo" style="width: 150px; margin-top: 20px;">
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LuckySpin Casino</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Lade den Header dynamisch
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                    activateNavLink();
+                });
+        });
+
+        // Markiere den aktiven Tab
+        function activateNavLink() {
+            const currentPage = window.location.pathname.split("/").pop();
+            document.querySelectorAll(".nav-link").forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

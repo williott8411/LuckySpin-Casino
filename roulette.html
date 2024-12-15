@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Roulette</h1>
+    </header>
+    <main>
+        <div id="roulette-container">
+            <div id="roulette-wheel">
+                <div class="pointer"></div>
+            </div>
+            <div>
+                <button onclick="placeBet('Red')">Bet on Red</button>
+                <button onclick="placeBet('Black')">Bet on Black</button>
+            </div>
+            <button onclick="spinRoulette()">Spin Roulette</button>
+            <p id="roulette-result"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 LuckySpin Casino</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

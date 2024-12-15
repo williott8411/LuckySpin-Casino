@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>777 Slot Machine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>777 Slot Machine</h1>
+    </header>
+    <main>
+        <label for="bet">Bet Amount:</label>
+        <select id="bet">
+            <option value="15">15</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="75">75</option>
+            <option value="100">100</option>
+        </select>
+        <div id="slot-machine">
+            <div class="slot">7</div>
+            <div class="slot">🍒</div>
+            <div class="slot">🔔</div>
+        </div>
+        <button onclick="spinSlots()">Spin</button>
+        <p id="slot-result"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 LuckySpin Casino</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
